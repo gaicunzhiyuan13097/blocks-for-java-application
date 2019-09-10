@@ -21,10 +21,10 @@
         <module>checkstyle</module>
         <module>cross-domain</module>
         <module>findbugs</module>
-        <module>junit</module>
         <module>lombok</module>
         <module>maven</module>
         <module>spring-boot-dev-tools</module>
         <module>swagger-ui</module>
+        <module>unit-test</module>
     </modules>
 </project>
