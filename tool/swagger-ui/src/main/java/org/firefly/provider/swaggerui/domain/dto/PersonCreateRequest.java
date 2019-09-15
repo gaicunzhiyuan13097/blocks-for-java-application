@@ -5,7 +5,8 @@ import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(value = "用户创建请求", description = "用户创建请求参数")
 public class PersonCreateRequest {
-    @ApiModelProperty(name = "name", value = "姓名", notes = "用户姓名", required = true, example = "张山", dataType = "String")
+    @ApiModelProperty(
+            name = "name", value = "姓名", notes = "用户姓名", required = true, example = "张山", dataType = "String")
     private String name;
     @ApiModelProperty(name = "age", value = "年龄", notes = "用户年龄", example = "25", dataType = "int")
     private int age;
