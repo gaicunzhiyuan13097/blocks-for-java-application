@@ -8,6 +8,12 @@
     <artifactId>unit-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.4.RELEASE</version>
+    </parent>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
@@ -17,15 +23,39 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <!--
-        也可进入JUnit官网“https://junit.org/junit4/”，手动下载Jar包放到ClassPath，进而编写单元测试。要运行单元测试，可以
-        使用命令“java -classpath <Jar包路径1>;<Jar包路径2>;... org.junit.runner.JUnitCore TestClass1 [...other test classes...]”
+        要编写单元测试，也可进入JUnit官网“https://junit.org/junit4/”，下载Jar包放到ClassPath。
+        要运行单元测试，也可使用命令“java -classpath <Jar包路径1>;<Jar包路径2>;... org.junit.runner.
+        JUnitCore TestClass1 [...other test classes...]”。
         -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+
+        <!--
+        Mockito是一个针对Java单元测试的模拟框架。
+        Mockito的官网：https://site.mockito.org/。
+        Mockito的说明文档：https://static.javadoc.io/org.mockito/mockito-core/3.0.0/org/mockito/Mockito.html。
+        Mockito的依赖包：https://mvnrepository.com/artifact/org.mockito/mockito-core。
+        -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>3.0.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -7,12 +7,12 @@ import static org.junit.Assert.fail;
 
 public class A {
     @Test
-    public void a() {
+    public void a1() {
         fail();
     }
 
-    @Category(SlowTests.class)
+    @Category(SlowTest.class)
     @Test
-    public void b() {
+    public void a2() {
     }
 }
