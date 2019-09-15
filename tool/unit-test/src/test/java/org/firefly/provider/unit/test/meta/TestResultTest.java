@@ -3,7 +3,7 @@ package org.firefly.provider.unit.test.meta;
 import junit.framework.TestResult;
 import junit.framework.TestSuite;
 
-public class TestSuiteAndTestResultDemoTest {
+public class TestResultTest {
     public static void main(String[] args) {
         TestSuite testSuite = new TestSuite(Demo03Test.class);
         TestResult testResult = new TestResult();

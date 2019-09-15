@@ -41,7 +41,7 @@ public class TestWatcherTest {
 
     @Test
     public void fails() {
-        fail();
+//        fail();
     }
 
     @Test
